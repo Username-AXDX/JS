@@ -4,6 +4,3 @@ currencyConverter;
 currencyConverter.convert().then((response) => {
   console.log(response);
 });
-let a = 5;
-let c = a + a;
-let d = 235;
