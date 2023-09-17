@@ -6,3 +6,6 @@ console.log(result);
 fs.mkdir('new_file', () => {
   fs.writeFile('./new_file/lm.txt', 'This is a good one', () => {});
 });
+fs.unlink('./new_file/lm.txt', () => {
+  fs.rmdir('./lm.txt'), () => {};
+});
