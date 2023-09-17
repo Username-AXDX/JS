@@ -1,7 +1,5 @@
-const os = require('os');
 const fs = require('fs');
-let rec = os.platform();
-console.log(rec);
 const my_modul = require('./my_modul');
-let str = my_modul.add('Hellp', ' World!');
-console.log(str);
+fs.writeFileSync('some.txt', 'Hello world!');
+let result = fs.readFileSync('some.txt', 'utf-8');
+console.log(result);
