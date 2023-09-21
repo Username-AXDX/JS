@@ -1,7 +1,7 @@
 function zipvalidate(postcode) {
   if (postcode.length != 6) {
     return false;
-  } // the first check
+  }
   if (
     postcode[0] === '0' ||
     postcode[0] === '5' ||
@@ -34,9 +34,11 @@ function zipvalidate(postcode) {
       case '9':
         break;
       default:
-        return flase;
+        return false;
     }
   }
+
+  return true;
 }
 
 //https://www.codewars.com/kata/552e45cc30b0dbd01100001a/train/javascript
